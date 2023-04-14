@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function faca() {
+    var ususario;
+    var senha;
+    var recorrente;
+    
+    recorrente = true;
+    do {
+        ususario = window.prompt('Enter a value for ususario');
+        senha = window.prompt('Enter a value for senha');
+        if (ususario == "Giovanna") {
+            if (senha == "0902") {
+                window.alert("senha e usuario OK");
+                recorrente = false;
+            }
+        }
+    } while (recorrente == true);
+}
+
+function main() {
+    var ususario;
+    var senha;
+    var recorrente;
+    
+    recorrente = true;
+    while (recorrente == true) {
+        ususario = window.prompt('Enter a value for ususario');
+        senha = window.prompt('Enter a value for senha');
+        if (ususario == "Giovanna") {
+            if (senha == "0902") {
+                window.alert("senha e usuario OK");
+                recorrente = false;
+            }
+        }
+    }
+}
+
+</script>
+<body>
+    <button onclick="faca()">faça</button>
+    <button onclick="main()"></button>
+</body>
+</html>
